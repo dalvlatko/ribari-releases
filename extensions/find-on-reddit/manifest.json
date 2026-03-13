@@ -1,0 +1,16 @@
+{
+    "id": "find-on-reddit",
+    "name": "Find on Reddit",
+    "version": "1.0.0",
+    "entryPoint": "index.html",
+    "icon": "icon.png",
+    "category": "Utilities",
+    "keyboardMode": "normal",
+    "contentScripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["shared.js", "content.js"],
+            "runAt": "document_end"
+        }
+    ]
+}
