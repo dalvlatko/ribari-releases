@@ -30,7 +30,6 @@ Window management on macOS is pretty restrictive, and even the best tiling tools
 - **Command palette** — fuzzy search across tabs, history, URLs, and workspaces (Cmd+K)
 - **Integrated terminal** — GPU-accelerated [ghostty](https://ghostty.org) terminal tiles, side by side with web tiles
 - **Code editors** — VS Code, Cursor, and T3 Code tile alongside browser and terminal tabs
-- **Native integration safety** — explicit permission prompts and documented access scopes for native features. See [docs/native-integrations.md](docs/native-integrations.md)
 - **Content blocking** — built-in ad and tracker filtering (light / balanced / strict)
 - **Extensions** — JS-based extension system for customization
 - **Workspace templates** — save and load workspace layouts
@@ -39,12 +38,11 @@ Window management on macOS is pretty restrictive, and even the best tiling tools
 
 Download the [latest release](https://github.com/dalvlatko/ribari-releases/releases), unzip, and move `Ribari Beta.app` to `/Applications`.
 
-### Gatekeeper
+### Gatekeeper bypass
 
-Ribari beta builds may be blocked by macOS Gatekeeper on first launch. To allow
-one of these builds:
+Ribari is not notarized yet, so macOS Gatekeeper will block it on first launch. To allow it:
 
-1. **Try opening normally** — double-click `Ribari Beta.app`. macOS may show a dialog saying the app "can't be opened because Apple cannot check it for malicious software."
+1. **Try opening normally** — double-click `Ribari Beta.app`. macOS will show a dialog saying the app "can't be opened because Apple cannot check it for malicious software."
 2. **Open System Settings → Privacy & Security** — scroll down to the Security section. You'll see a message like *"Ribari Beta.app was blocked from use because it is not from an identified developer."*
 3. **Click "Open Anyway"** and confirm in the follow-up dialog.
 
@@ -55,11 +53,6 @@ xattr -cr /Applications/Ribari\ Beta.app
 ```
 
 You only need to do this once — macOS remembers your choice for subsequent launches.
-
-Public release builds should be Developer ID signed, hardened-runtime enabled,
-and notarized before distribution. Release security notes, including current
-native-integration exceptions, live in
-[docs/security-hardening.md](docs/security-hardening.md).
 
 ## Tech Stack
 
