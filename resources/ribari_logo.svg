@@ -1,0 +1,52 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="#0E4D64"/>
+  <!-- Circular Emblem -->
+  <circle cx="512" cy="512" r="420" fill="none" stroke="white" stroke-width="40"/>
+  <!-- Water Ripples -->
+  <path d="M250 680 Q512 740 774 680" stroke="white" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <path d="M300 740 Q512 790 724 740" stroke="white" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M350 790 Q512 830 674 790" stroke="white" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Boat Hull -->
+  <path d="M300 560 
+           Q512 640 724 560 
+           L660 650 
+           Q512 695 364 650 
+           Z" 
+        fill="white"/>
+  <!-- Mast -->
+  <rect x="506" y="220" width="12" height="400" fill="white"/>
+  <!-- Main Sail (left side) -->
+  <path d="
+    M506 240
+    L506 550
+    L330 525
+    Q300 400 506 240
+    Z"
+    fill="white"
+    opacity="0.85"/>
+
+  <!-- Fishing Rod -->
+  <path d="M680 560 
+           Q760 510 850 535" 
+        stroke="white" 
+        stroke-width="18" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.85"/>
+  <!-- Fishing Line -->
+  <path d="M850 535 
+           Q880 620 830 690" 
+        stroke="white" 
+        stroke-width="7" 
+        fill="none" 
+        stroke-linecap="round"/>
+  <!-- Hook -->
+  <path d="M830 690 
+           q18 24 -12 40" 
+        stroke="white" 
+        stroke-width="7" 
+        fill="none" 
+        stroke-linecap="round"
+        opacity="0.85"/>
+</svg>

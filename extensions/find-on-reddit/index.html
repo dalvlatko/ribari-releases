@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find on Reddit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Find on Reddit</h1>
+    </div>
+
+    <p class="privacy-note">Searches Reddit's public API for discussions about the current page. No authentication required.</p>
+
+    <!-- URL bar -->
+    <div class="section-label">Page URL</div>
+    <div class="url-bar">
+        <input type="text" id="urlField" placeholder="Navigate to a page or paste a URL..." spellcheck="false">
+    </div>
+
+    <!-- Search controls -->
+    <div class="search-row">
+        <button id="searchBtn" class="search-button">Search Reddit</button>
+        <div class="sort-container">
+            <label for="sortSelect">Sort:</label>
+            <select id="sortSelect">
+                <option value="score">Score</option>
+                <option value="comments">Comments</option>
+                <option value="new">Newest</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings-row">
+        <label class="inline-toggle"><input type="checkbox" id="oldReddit"> Use old.reddit.com</label>
+        <label class="inline-toggle"><input type="checkbox" id="exactMatch"> Exact URL match</label>
+        <label class="inline-toggle"><input type="checkbox" id="autoSearch"> Auto-search on navigation</label>
+        <label class="inline-toggle"><input type="checkbox" id="showBadge" checked> Show address bar icon</label>
+    </div>
+
+    <!-- Results -->
+    <div id="statusMessage" class="status-message"></div>
+    <div id="results" class="results"></div>
+
+    <!-- Credits -->
+    <div class="credits">
+        <span>Inspired by <a id="originalLink" href="#">find-on-reddit</a> by <a id="authorLink" href="#">Adeel Hasan</a></span>
+    </div>
+
+    <script src="shared.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

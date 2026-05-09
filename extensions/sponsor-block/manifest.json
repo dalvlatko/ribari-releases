@@ -1,0 +1,16 @@
+{
+    "id": "sponsor-block",
+    "name": "SponsorBlock",
+    "version": "2.0.0",
+    "entryPoint": "index.html",
+    "icon": "forward.fill",
+    "category": "Media",
+    "keyboardMode": "normal",
+    "contentScripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"],
+            "runAt": "document_start"
+        }
+    ]
+}

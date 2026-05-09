@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SponsorBlock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Settings header -->
+    <div class="header">
+        <h1>SponsorBlock</h1>
+        <div class="toggle-container">
+            <input type="checkbox" class="toggle" id="enableToggle">
+        </div>
+    </div>
+
+    <p class="privacy-note">SponsorBlock sends video IDs to sponsor.ajay.app to fetch segment data. No personal information is transmitted. Settings changes take effect on the next YouTube page load.</p>
+
+    <!-- Segment category settings -->
+    <div class="section-label">Categories</div>
+    <div id="categoriesSection" class="checkbox-group"></div>
+
+    <!-- Behavior settings shared with the content script -->
+    <div class="section-label">Behavior</div>
+    <div id="behaviorSection">
+        <div class="checkbox-item">
+            <label><input type="checkbox" id="autoSkip"> Auto-skip segments</label>
+        </div>
+        <div class="checkbox-item">
+            <label><input type="checkbox" id="notifications"> Show toast when segment is skipped</label>
+        </div>
+    </div>
+
+    <!-- Attribution and outbound links -->
+    <div class="section-label">Credits</div>
+    <p class="attribution">SponsorBlock by Ajay Ramachandran and contributors</p>
+    <div class="links">
+        <button class="link-button" id="projectLink">Official site</button>
+        <button class="link-button" id="sourceLink">Source code</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
