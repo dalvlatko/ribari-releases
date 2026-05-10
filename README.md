@@ -30,7 +30,6 @@ Window management on macOS is pretty restrictive, and even the best tiling tools
 - **Command palette** — fuzzy search across tabs, history, URLs, and workspaces (Cmd+K)
 - **Integrated terminal** — GPU-accelerated [ghostty](https://ghostty.org) terminal tiles, side by side with web tiles
 - **Code editors** — VS Code, Cursor, and T3 Code tile alongside browser and terminal tabs
-- **Native integration safety** — explicit permission prompts and documented access scopes for native features. See [docs/native-integrations.md](docs/native-integrations.md)
 - **Content blocking** — built-in ad and tracker filtering (light / balanced / strict)
 - **Extensions** — JS-based extension system for customization
 - **Workspace templates** — save and load workspace layouts
